@@ -3,5 +3,15 @@
     "version": "1.0.0",
     "private": true,
     "dependencies": {
-    }
+    },
+    {
+      "name": "my-awesome-package",
+      "version": "1.0.0",
+      "devDependencies": {
+        "auto-changelog": "*"
+      },
+      "scripts": {
+        "version": "auto-changelog -p && git add CHANGELOG.md"
+      }
+}
 }
